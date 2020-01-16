@@ -3,7 +3,7 @@ import './Header.scss'
 
 const Header = () => {
     return (
-        <header className={'Header'} >Component Header</header>
+        <header className={'Header'} >Component Header Linked</header>
     );
 }
 
