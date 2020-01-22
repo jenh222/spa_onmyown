@@ -1,1 +1,55 @@
-.Nav {background: rgb(234, 236, 119); padding: 20px;}
+.Nav { 
+    background: rgb(255, 255, 255); 
+    padding: 10px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+
+    .hamburger { 
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .links {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 14px;
+        a {
+            background-color: rgb(64, 163, 255);
+            color: rgb(255, 255, 255);
+            display: block;
+            padding: 15px 30px;
+            border-radius: 30px;
+            margin: 10px;
+            text-decoration: none;
+            border: solid 1px rgb(64, 163, 255);
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                border: solid 1px rgb(64, 163, 255);
+                color: rgb(64, 163, 255);
+                box-shadow: 0 2px 5px 0 rgba(134, 134, 134, 0.2), 0 3px 8px 0 rgba(148, 148, 148, 0.19);
+                
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .Nav { 
+
+        .links {
+
+            a {
+                display: inline-block;
+            }
+        }
+        
+            .hamburger { 
+                display: none;
+            }
+        
+    }
+}
+

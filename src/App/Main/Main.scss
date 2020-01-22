@@ -1,1 +1,32 @@
-.Main {background: rgb(218, 138, 211); padding: 20px;}
+.Main {
+    background: rgb(3, 13, 71); padding: 20px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 100px
+}
+
+@media screen and (min-width: 768px) {
+    .Main { 
+        background-color: rgb(64, 163, 255); 
+        
+    }
+}
+
+
+@media screen and (min-width: 1020px) {
+    .Main { 
+        background-color: rgb(3, 13, 71); 
+
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .Main { 
+        background-color: rgb(64, 163, 255); 
+
+    }
+
+}

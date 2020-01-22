@@ -3,7 +3,7 @@ import './Main.scss';
 
 const Main = () => {
     return (
-        <main className='Main'>Component Main</main>
+        <main className='Main'>Copy + Image</main>
     )
 };
 
