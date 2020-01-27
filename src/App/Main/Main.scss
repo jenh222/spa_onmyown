@@ -4,29 +4,50 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 14px;
     text-align: center;
-    padding: 100px
-}
+    padding: 20px;
 
-@media screen and (min-width: 768px) {
-    .Main { 
-        background-color: rgb(64, 163, 255); 
-        
+    .columns {
+
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .col {
+            padding: 10px;
+            color: black;
+
+            width: 100%;
+
+        }
+
+        .col1 {background-color: pink;}
+        .col2 {background-color: rgb(252, 117, 139);}
+
     }
+
 }
 
-
-@media screen and (min-width: 1020px) {
-    .Main { 
-        background-color: rgb(3, 13, 71); 
-
+@media screen and (min-width: 600px) {
+    .Main{
+            .columns {
+                .col{
+                    width: 45%;
+                }
+            }
+    
+        }
     }
-
-}
-
-@media screen and (min-width: 1280px) {
-    .Main { 
-        background-color: rgb(64, 163, 255); 
-
+    
+    @media screen and (min-width: 800px) {
+    .Main{
+            .columns {
+                .col{
+                    width: 47%;
+                }
+            }
+    
+        }
     }
-
-}
