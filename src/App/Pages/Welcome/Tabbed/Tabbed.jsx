@@ -23,7 +23,7 @@ const tabItems = [
 const Tabbed = () => {
 
     //State managed
-    const [currentTab, setCurrentTab] = useState(tabItems[1]);
+    const [currentTab, setCurrentTab] = useState(tabItems[0]);
 
     const isAbout = (currentTab.title === 'About') ? 'tab active':'tab';
     const isMission = (currentTab.title === 'Mission') ? 'tab active':'tab';
@@ -38,7 +38,7 @@ const Tabbed = () => {
         </div>
 
         <div className="content">
-            <img src={ currentTab.image }/>
+            <img src={ currentTab.image } alt = {currentTab.title}/>
             <h2>{ currentTab.title }</h2>
             <p>{ currentTab.text }</p>
         </div>
