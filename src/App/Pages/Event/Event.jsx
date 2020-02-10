@@ -17,7 +17,9 @@ const Event = () => {
     return (
         <div className ='Event'>
             <h2>Events go here.</h2>
-            <EventCategories />
+            <div className="container">
+                <EventCategories />
+            </div>
         </div>
     )
 }

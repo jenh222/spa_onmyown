@@ -1,7 +1,13 @@
 .Event {
     background-color: teal;
-    margin: 50px 0px;
+    margin: 0px 0px;
     padding: 20px;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
 
 
 .EventCategory {

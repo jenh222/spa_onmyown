@@ -17,7 +17,9 @@ const Staff = () => {
     return (
         <div className ='Staff'>
             <h2>Staff goes here.</h2>
-            <StaffMembers />
+            <div className="container">
+                <StaffMembers />
+            </div>
         </div>
     )
 }
