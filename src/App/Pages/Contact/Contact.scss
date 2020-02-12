@@ -17,6 +17,8 @@
     .Contact {
         .row1 {
             display: flex;
+            max-width: 1000px;
+            margin: auto;
 
             .column {min-height: 300px;}
 
