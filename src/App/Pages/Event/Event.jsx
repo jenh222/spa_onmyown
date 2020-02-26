@@ -3,6 +3,8 @@ import './Event.scss';
 //import { eventCategories } from './event.js';
 import API from '../../common/API.js';
 
+import Event from './Events.jsx';
+
 const EventCategories = () => {
 
     //1. Set up state to keep track of data from server
@@ -20,18 +22,15 @@ const EventCategories = () => {
 
     return eventCategories.map((eventCategory, idx) => {
         return (
-            <div key={idx} className = {'EventCategory'}>
-                <img src= {eventCategory.image} alt={eventCategory.name} />
-                <h3>{ eventCategory.category }</h3>
-            </div>
+            <Event key={ idx } eventCategory={ eventCategory } />
         );
     });
 }
 
-const Event = () => {
+const Events = () => {
     return (
         <div className ='Event'>
-            <h2>Events go here.</h2>
+            <h2>Events Go Here.</h2>
             <div className="container">
                 <EventCategories />
             </div>
@@ -39,4 +38,4 @@ const Event = () => {
     )
 }
 
-export default Event;
+export default Events;
