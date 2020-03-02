@@ -25,7 +25,7 @@ const Event = (props) => {
             src= {props.eventCategory.image} 
             alt={props.eventCategory.title} 
             />
-            <h3>{ props.eventCategory.title }</h3>
+            <h3>{ props.eventCategory.title }: Category:{ props.eventCategory.category }</h3>
             <Lightbox 
             show={showLightBox} 
             turnLightOff={turnLightOff}
