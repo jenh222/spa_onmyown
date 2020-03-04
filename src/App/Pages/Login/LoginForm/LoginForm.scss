@@ -1,0 +1,80 @@
+.LoginForm {
+
+    border: solid 1px white;
+    padding: 40px;
+
+    &.form-invalid {
+        border: solid 0px black;
+        background-color: rgb(22, 36, 112);
+    }
+
+    .error-message {
+        border: solid 0px red;
+        background-color: pink;
+        padding: 15px;
+        margin-bottom: 50px;
+        text-align: left;
+        color: red;
+    }
+
+.form-group {
+
+    margin-bottom: 20px;
+
+    .left {
+        border: solid 0px grey;
+        font-weight: none;
+        color:white;
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    .right {
+        border: solid 1px grey;
+
+        }
+
+    input, textarea {
+        box-sizing: border-box;
+        display: block;
+        font-size: 16px;
+        color: #40a3ff;
+        padding: 10px 20px;
+        width: 100%;
+
+        &.invalid {
+            border: solid 1px red;
+            background-color: pink;
+        }
+    }
+
+    textarea {
+        height: 200px;
+    }
+
+    button {
+        background-color: white;
+        border: none;
+        font-size: 15px;
+        color: #001d38;
+        line-height: 40px;
+        padding: 0px 20px;
+        width: 100%;
+
+        &:hover {background-color: #40a3ff; color: white;}
+        &:active {background-color: #0084ff; color: white;}
+    }
+
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .LoginForm {
+        .form-group {
+            display: flex;
+            
+            .left { flex: 1; text-align: right; }
+            .right { flex: 5; }
+        }
+    }
+}
