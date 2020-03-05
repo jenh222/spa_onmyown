@@ -9,6 +9,7 @@ const EventCategories = ({eventCategories, currCat}) => {
                 <Event key={ idx } eventCategory={ eventCategory } />
             );
         }
+        return false;
     });
 }
 

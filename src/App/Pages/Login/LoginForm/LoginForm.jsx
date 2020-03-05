@@ -40,11 +40,6 @@ const LoginForm = () => {
                 message: 'You forgot to fill out the Password field',
             })
         }
-        if (messageRef.current.value.length > 1 === (emailRef.current.value.length > 4)) {
-            errorMessages.push({
-                message: 'You have successfully logged in',
-            })
-        }
 
         updateErrorsArray(errorMessages);
 
